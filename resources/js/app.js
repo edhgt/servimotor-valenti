@@ -6,6 +6,8 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
+import PrimeVue from 'primevue/config';
+import Material from '@primeuix/themes/material';
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -36,4 +38,11 @@ app.component('example-component', ExampleComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
+app.use(PrimeVue, {
+    
+    theme: {
+        preset: Material
+    },
+    license: import.meta.env.VITE_PRIMEUI_LICENSE_KEY
+});
 app.mount('#app');
