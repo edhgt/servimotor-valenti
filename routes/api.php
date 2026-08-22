@@ -11,3 +11,6 @@ Route::apiResource('sucursales', App\Http\Controllers\Api\SucursalController::cl
 ->parameters([
     'sucursales' => 'sucursal'
 ]);
+
+Route::apiResource('clientes', App\Http\Controllers\Api\ClienteController::class);
+Route::apiResource('vehiculos', App\Http\Controllers\Api\VehiculoController::class);

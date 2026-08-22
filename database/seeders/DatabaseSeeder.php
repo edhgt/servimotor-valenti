@@ -10,6 +10,7 @@ use App\Models\Cliente;
 use App\Models\Color;
 use App\Models\Marca;
 use App\Models\Modelo;
+use App\Models\Sucursal;
 use App\Models\TipoMotor;
 use App\Models\TipoTransmision;
 use App\Models\TipoVehiculo;
@@ -33,6 +34,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'test@example.com',
             ]);
 
+            Sucursal::factory()->create();
             Marca::factory(random_int(1, 50))->create();
             Modelo::factory(random_int(1, 50))->create();
             Color::factory(random_int(1, 50))->create();
