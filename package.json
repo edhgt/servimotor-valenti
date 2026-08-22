@@ -18,6 +18,7 @@
     },
     "dependencies": {
         "@primeuix/themes": "^3.0.0",
-        "primevue": "^5.0.1"
+        "primevue": "^5.0.1",
+        "vue-router": "^5.2.0"
     }
 }
